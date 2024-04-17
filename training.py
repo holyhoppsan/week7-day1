@@ -22,7 +22,6 @@ model = get_peft_model(model, config)
 dataset = load_dataset("harpreetsahota/modern-to-shakesperean-translation")
 print("dataset", dataset)
 train_data = dataset["train"]
-small_train_data = train_data.select(range(100))
 
 
 def generate_prompt(user_query):
@@ -32,16 +31,16 @@ def generate_prompt(user_query):
 
 
 tokenize = lambda prompt: tokenizer(prompt + tokenizer.eos_token, truncation=True, max_length=CUTOFF_LEN, padding="max_length")
-small_train_data = small_train_data.shuffle().map(lambda x: tokenize(generate_prompt(x)), remove_columns=["modern" , "shakespearean"])
+train_data = train_data.shuffle().map(lambda x: tokenize(generate_prompt(x)), remove_columns=["modern" , "shakespearean"])
 
 
 trainer = Trainer(
   model=model,
-  train_dataset=small_train_data,
+  train_dataset=train_data,
   args=TrainingArguments(
     per_device_train_batch_size=1,
     gradient_accumulation_steps=4,
-    num_train_epochs=2,
+    num_train_epochs=6,
     learning_rate=1e-4,
     logging_steps=2,
     optim="adamw_torch",
@@ -51,6 +50,16 @@ trainer = Trainer(
   data_collator=transformers.DataCollatorForLanguageModeling(tokenizer, mlm=False)
 )
 
-
 model.config.use_cache = False
 trainer.train()
+
+model.eval()
+
+input_text = "Do you like fish"
+
+with torch.no_grad():
+    input_ids = tokenizer.encode(input_text, return_tensors="pt")
+    outputs = model.generate(input_ids, max_length=1000)
+
+notes = tokenizer.decode(outputs[0], skip_special_tokens=True)
+print(f"Reading: {notes}") 
