@@ -9,6 +9,19 @@ peft_model_id = "mixtral-moe-lora-instruct-shapeskeare/checkpoint-50"
 
 # Load the tokenizer and model
 tokenizer = AutoTokenizer.from_pretrained(model_id)
+
+# Tokens to check
+special_tokens = ["<s>", "</s>", "[INST]", "[/INST]", "[API]", "[/API]"]
+
+# Check each token
+for token in special_tokens:
+    token_id = tokenizer.convert_tokens_to_ids(token)
+    if token_id == tokenizer.unk_token_id:
+        print(f"Token {token} is not recognized by the tokenizer.")
+    else:
+        print(f"Token {token} is recognized by the tokenizer and has an ID of {token_id}.")
+
+
 model = AutoModelForCausalLM.from_pretrained(model_id, load_in_4bit=True, torch_dtype=torch.float16, device_map="auto")
 model.load_adapter(peft_model_id)
 model.eval()
@@ -25,7 +38,8 @@ def generate_shakespearean_text(input_text: str):
         raise ValueError("Input text is required")  # Changed from HTTPException for direct script execution compatibility
 
     sys_msg = "Translate the given text to Shakespearean style."
-    prompt = f"<s> [INST]{sys_msg}\n{input_text}[/INST]</s>"
+    #prompt = f"<s> [INST]{sys_msg}\n{input_text}[/INST]</s>"
+    prompt = f"{sys_msg} {input_text}"
 
     with torch.no_grad():
         input_ids = tokenizer.encode(prompt, return_tensors="pt")
@@ -40,7 +54,7 @@ def generate_shakespearean_text(input_text: str):
     # return {"original_text": input_text, "shakespearean_text": results[0]['generated_text']}
 
 def main():
-    input_text = "Do you like fish"
+    input_text = "Can Daniel replicate the shakespeare example"
     result = generate_shakespearean_text(input_text)
     print(result)
 

@@ -8,6 +8,19 @@ from peft import prepare_model_for_kbit_training, LoraConfig, get_peft_model, Pe
 tokenizer = AutoTokenizer.from_pretrained("mistralai/Mixtral-8x7B-Instruct-v0.1")
 model = AutoModelForCausalLM.from_pretrained("mistralai/Mixtral-8x7B-Instruct-v0.1", load_in_4bit=True, torch_dtype=torch.float16, device_map="auto")
 
+# Tokens to check
+special_tokens = ["<s>", "</s>", "[INST]", "[/INST]", "[API]", "[/API]"]
+
+# Check each token
+for token in special_tokens:
+    token_id = tokenizer.convert_tokens_to_ids(token)
+    if token_id == tokenizer.unk_token_id:
+        print(f"Token {token} is not recognized by the tokenizer.")
+    else:
+        print(f"Token {token} is recognized by the tokenizer and has an ID of {token_id}.")
+
+exit()
+
 # Prepare model for k-bit training
 model = prepare_model_for_kbit_training(model)
 tokenizer.pad_token = "!"
