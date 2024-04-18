@@ -5,7 +5,7 @@ from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM
 app = FastAPI()
 
 model_id = "mistralai/Mixtral-8x7B-Instruct-v0.1"
-peft_model_id = "mixtral-moe-lora-instruct-shapeskeare/checkpoint-50"
+#peft_model_id = "mixtral-moe-lora-instruct-shapeskeare/checkpoint-50"
 
 # Load the tokenizer and model
 tokenizer = AutoTokenizer.from_pretrained(model_id)
@@ -23,7 +23,7 @@ for token in special_tokens:
 
 
 model = AutoModelForCausalLM.from_pretrained(model_id, load_in_4bit=True, torch_dtype=torch.float16, device_map="auto")
-model.load_adapter(peft_model_id)
+# model.load_adapter(peft_model_id)
 model.eval()
 
 # Set up the text generation pipeline
