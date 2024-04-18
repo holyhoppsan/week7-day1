@@ -19,8 +19,6 @@ for token in special_tokens:
     else:
         print(f"Token {token} is recognized by the tokenizer and has an ID of {token_id}.")
 
-exit()
-
 # Prepare model for k-bit training
 model = prepare_model_for_kbit_training(model)
 tokenizer.pad_token = "!"

@@ -37,7 +37,7 @@ def generate_shakespearean_text(input_text: str):
     if not input_text:
         raise ValueError("Input text is required")  # Changed from HTTPException for direct script execution compatibility
 
-    sys_msg = "Translate the given text to Shakespearean style."
+    sys_msg = f"Generate the code for a valid C# script that is compatible with Unity, and that carries out the action or task requested by the prompt I will provide on the next line, I only want the code no other wording or explanation apart from the code. \n {input_text}"
     #prompt = f"<s> [INST]{sys_msg}\n{input_text}[/INST]</s>"
     prompt = f"{sys_msg} {input_text}"
 
@@ -54,7 +54,7 @@ def generate_shakespearean_text(input_text: str):
     # return {"original_text": input_text, "shakespearean_text": results[0]['generated_text']}
 
 def main():
-    input_text = "Can Daniel replicate the shakespeare example"
+    input_text = "Add 2 and 3 to a variable called hej"
     result = generate_shakespearean_text(input_text)
     print(result)
 
