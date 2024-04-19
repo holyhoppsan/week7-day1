@@ -1,0 +1,337 @@
+data = [
+    {
+        "Input": "Compose an email for jane.doe@example.com, eco.team@example.org, and green.future@enviro.org about the importance of renewable energy.",
+        "Output": {
+            "Recipients": [
+                "jane.doe@example.com",
+                "eco.team@example.org",
+                "green.future@enviro.org"
+            ],
+            "topic": "Exploring the benefits of renewable energy for our future projects"
+        }
+    },
+    {
+        "Input": "Send a briefing to mark.twain@literature.com, sam.clemens@writerhub.com, and authors.union@literary.org on the impact of American literature.",
+        "Output": {
+            "Recipients": [
+                "mark.twain@literature.com",
+                "sam.clemens@writerhub.com",
+                "authors.union@literary.org"
+            ],
+            "topic": "Discussing the influence of classic American literature on modern writers"
+        }
+    },
+    {
+        "Input": "Email sarah.connor@techadvance.net, ai.group@innovations.com, tech.leaders@futuretech.com about the latest trends in AI.",
+        "Output": {
+            "Recipients": [
+                "sarah.connor@techadvance.net",
+                "ai.group@innovations.com",
+                "tech.leaders@futuretech.com"
+            ],
+            "topic": "Upcoming trends in artificial intelligence and machine learning"
+        }
+    },
+    {
+        "Input": "Draft a message for lisa.mono@artworld.com, gallery@artworld.com, art.critics@review.com about the new abstract art show.",
+        "Output": {
+            "Recipients": [
+                "lisa.mono@artworld.com",
+                "gallery@artworld.com",
+                "art.critics@review.com"
+            ],
+            "topic": "Announcement of the new abstract art exhibition dates"
+        }
+    },
+    {
+        "Input": "Alert greg.philips@financecorp.com, finance@financecorp.com, accounts@financecorp.com, budget.team@financecorp.com about the financial review meeting.",
+        "Output": {
+            "Recipients": [
+                "greg.philips@financecorp.com",
+                "finance@financecorp.com",
+                "accounts@financecorp.com",
+                "budget.team@financecorp.com"
+            ],
+            "topic": "Quarterly financial review and budget planning"
+        }
+    },
+    {
+        "Input": "Notify emily.snow@skiworld.com, sales@skiworld.com, product.development@skiworld.com about ski gear innovations.",
+        "Output": {
+            "Recipients": [
+                "emily.snow@skiworld.com",
+                "sales@skiworld.com",
+                "product.development@skiworld.com"
+            ],
+            "topic": "Latest innovations in ski equipment for the upcoming winter season"
+        }
+    },
+    {
+        "Input": "Message bruce.wayne@gotham.com, gotham.safety@council.gov, community.support@gotham.com about community safety projects.",
+        "Output": {
+            "Recipients": [
+                "bruce.wayne@gotham.com",
+                "gotham.safety@council.gov",
+                "community.support@gotham.com"
+            ],
+            "topic": "Strategies for enhancing community safety and crime prevention"
+        }
+    },
+    {
+        "Input": "Update clark.kent@dailyplanet.com, editors@dailyplanet.com, news.room@dailyplanet.com on the journalism ethics seminar.",
+        "Output": {
+            "Recipients": [
+                "clark.kent@dailyplanet.com",
+                "editors@dailyplanet.com",
+                "news.room@dailyplanet.com"
+            ],
+            "topic": "The critical importance of ethics in modern journalism"
+        }
+    },
+    {
+        "Input": "Please inform tony.stark@starkindustries.com, r.d@starkindustries.com, tech.support@starkindustries.com about the R&D symposium.",
+        "Output": {
+            "Recipients": [
+                "tony.stark@starkindustries.com",
+                "r.d@starkindustries.com",
+                "tech.support@starkindustries.com"
+            ],
+            "topic": "Breakthrough technologies in energy and automation for the next decade"
+        }
+    },
+    {
+        "Input": "Send an email to steve.rogers@veterans.org, support@veterans.org, outreach@veterans.org about new community engagement programs.",
+        "Output": {
+            "Recipients": [
+                "steve.rogers@veterans.org",
+                "support@veterans.org",
+                "outreach@veterans.org"
+            ],
+            "topic": "Enhancing support programs for veterans and their families"
+        }
+    },
+    {
+        "Input": "Prepare a note for diana.prince@amazonian.com, warrior.training@amazonian.com about new training techniques.",
+        "Output": {
+            "Recipients": [
+                "diana.prince@amazonian.com",
+                "warrior.training@amazonian.com"
+            ],
+            "topic": "Innovative combat training techniques for modern challenges"
+        }
+    },
+    {
+        "Input": "Email bruce.banner@researchlab.com, hulk.smash@researchlab.com, gamma.sciences@researchlab.com about stress management in high-pressure projects.",
+        "Output": {
+            "Recipients": [
+                "bruce.banner@researchlab.com",
+                "hulk.smash@researchlab.com",
+                "gamma.sciences@researchlab.com"
+            ],
+            "topic": "Effective techniques for managing stress in high-pressure environments"
+        }
+    },
+    {
+        "Input": "Message natasha.romanoff@espionage.com, covert.ops@spyagency.com about advancements in field equipment.",
+        "Output": {
+            "Recipients": [
+                "natasha.romanoff@espionage.com",
+                "covert.ops@spyagency.com"
+            ],
+            "topic": "Latest advancements in spy gadgets and surveillance tools"
+        }
+    },
+    {
+        "Input": "Draft an update for peter.parker@photoworld.com, urban.capture@photoworld.com about essential photography techniques.",
+        "Output": {
+            "Recipients": [
+                "peter.parker@photoworld.com",
+                "urban.capture@photoworld.com"
+            ],
+            "topic": "Essential tips for capturing compelling photographs in urban environments"
+        }
+    },
+    {
+        "Input": "Send an announcement to clark.kent@dailyplanet.com, lois.lane@dailyplanet.com, jimmy.olson@dailyplanet.com about the upcoming press conference.",
+        "Output": {
+            "Recipients": [
+                "clark.kent@dailyplanet.com",
+                "lois.lane@dailyplanet.com",
+                "jimmy.olson@dailyplanet.com"
+            ],
+            "topic": "Details of the upcoming press conference on civic responsibilities"
+        }
+    },
+    {
+        "Input": "Alert tony.stark@starkindustries.com, pepper.potts@starkindustries.com, innovation@starkindustries.com, media.relations@starkindustries.com about the product launch event.",
+        "Output": {
+            "Recipients": [
+                "tony.stark@starkindustries.com",
+                "pepper.potts@starkindustries.com",
+                "innovation@starkindustries.com",
+                "media.relations@starkindustries.com"
+            ],
+            "topic": "Final preparations and agenda for the upcoming product launch"
+        }
+    },
+    {
+        "Input": "Notify loki.laufeyson@trickstermail.com, illusions@magicshow.com, stagecraft@entertainers.org about the magic conference.",
+        "Output": {
+            "Recipients": [
+                "loki.laufeyson@trickstermail.com",
+                "illusions@magicshow.com",
+                "stagecraft@entertainers.org"
+            ],
+            "topic": "Upcoming international conference on magic and illusion techniques"
+        }
+    },
+    {
+        "Input": "Message steve.rogers@veterans.org, natasha.romanoff@espionage.com, tony.stark@starkindustries.com about the security protocols update.",
+        "Output": {
+            "Recipients": [
+                "steve.rogers@veterans.org",
+                "natasha.romanoff@espionage.com",
+                "tony.stark@starkindustries.com"
+            ],
+            "topic": "Revised security protocols and their implications for operational efficiency"
+        }
+    },
+    {
+        "Input": "Draft an email to bruce.wayne@gotham.com, lucius.fox@wayneenterprises.com, gotham.projects@wayneenterprises.com about new community projects.",
+        "Output": {
+            "Recipients": [
+                "bruce.wayne@gotham.com",
+                "lucius.fox@wayneenterprises.com",
+                "gotham.projects@wayneenterprises.com"
+            ],
+            "topic": "Launching new community projects for urban development and crime prevention"
+        }
+    },
+    {
+        "Input": "Send a briefing to natasha.romanoff@espionage.com, black.widow@spyagency.com, field.agents@spyagency.com about covert operations training.",
+        "Output": {
+            "Recipients": [
+                "natasha.romanoff@espionage.com",
+                "black.widow@spyagency.com",
+                "field.agents@spyagency.com"
+            ],
+            "topic": "New training modules for covert operations and espionage tactics"
+        }
+    },
+    {
+        "Input": "Email peter.parker@photoworld.com, urban.photography@photoworld.com, night.shots@photoworld.com about a workshop on nighttime photography.",
+        "Output": {
+            "Recipients": [
+                "peter.parker@photoworld.com",
+                "urban.photography@photoworld.com",
+                "night.shots@photoworld.com"
+            ],
+            "topic": "Workshop on mastering nighttime photography in urban settings"
+        }
+    },
+    {
+        "Input": "Update thor.odinson@asgardianmyths.com, odin.allfather@asgardianmyths.com, loki.laufeyson@trickstermail.com on the mythological research findings.",
+        "Output": {
+            "Recipients": [
+                "thor.odinson@asgardianmyths.com",
+                "odin.allfather@asgardianmyths.com",
+                "loki.laufeyson@trickstermail.com"
+            ],
+            "topic": "Recent discoveries in Norse mythology and their implications for cultural studies"
+        }
+    },
+    {
+        "Input": "Send an update to diana.prince@amazonian.com, warrior.queen@amazonian.com, combat.training@amazonian.com about new defensive tactics.",
+        "Output": {
+            "Recipients": [
+                "diana.prince@amazonian.com",
+                "warrior.queen@amazonian.com",
+                "combat.training@amazonian.com"
+            ],
+            "topic": "Innovations in defensive combat techniques and their strategic importance"
+        }
+    },
+    {
+        "Input": "Notify bruce.banner@researchlab.com, gamma.team@researchlab.com, hulk.smash@researchlab.com about the new radiation safety protocols.",
+        "Output": {
+            "Recipients": [
+                "bruce.banner@researchlab.com",
+                "gamma.team@researchlab.com",
+                "hulk.smash@researchlab.com"
+            ],
+            "topic": "Implementation of new safety protocols in handling gamma radiation"
+        }
+    },
+    {
+        "Input": "Compose an email for steve.rogers@veterans.org, sam.wilson@veterans.org, bucky.barnes@veterans.org about the veteran reintegration program.",
+        "Output": {
+            "Recipients": [
+                "steve.rogers@veterans.org",
+                "sam.wilson@veterans.org",
+                "bucky.barnes@veterans.org"
+            ],
+            "topic": "New initiatives and support systems for veteran reintegration"
+        }
+    },
+    {
+        "Input": "Draft an announcement for tony.stark@starkindustries.com, pepper.potts@starkindustries.com about the new clean energy project.",
+        "Output": {
+            "Recipients": [
+                "tony.stark@starkindustries.com",
+                "pepper.potts@starkindustries.com"
+            ],
+            "topic": "Launch of the groundbreaking clean energy project and its expected impacts"
+        }
+    },
+    {
+        "Input": "Email loki.laufeyson@trickstermail.com, odin.allfather@asgardianmyths.com about the Asgardian cultural festival.",
+        "Output": {
+            "Recipients": [
+                "loki.laufeyson@trickstermail.com",
+                "odin.allfather@asgardianmyths.com"
+            ],
+            "topic": "Preparations and activities planned for the upcoming Asgardian cultural festival"
+        }
+    },
+    {
+        "Input": "Send a message to natasha.romanoff@espionage.com, covert.operations@spyagency.com about the new surveillance technologies.",
+        "Output": {
+            "Recipients": [
+                "natasha.romanoff@espionage.com",
+                "covert.operations@spyagency.com"
+            ],
+            "topic": "Latest developments in surveillance technology and their applications in field operations"
+        }
+    },
+    {
+        "Input": "Notify bruce.wayne@gotham.com, alfred.pennyworth@wayneenterprises.com, gotham.city.planning@wayneenterprises.com about the urban renewal plan.",
+        "Output": {
+            "Recipients": [
+                "bruce.wayne@gotham.com",
+                "alfred.pennyworth@wayneenterprises.com",
+                "gotham.city.planning@wayneenterprises.com"
+            ],
+            "topic": "Strategic initiatives for Gotham's urban renewal and sustainable development"
+        }
+    },
+    {
+        "Input": "Update clark.kent@dailyplanet.com, lois.lane@dailyplanet.com on the investigative journalism award.",
+        "Output": {
+            "Recipients": [
+                "clark.kent@dailyplanet.com",
+                "lois.lane@dailyplanet.com"
+            ],
+            "topic": "Recognition in the upcoming investigative journalism awards and the criteria for selection"
+        }
+    },
+    {
+        "Input": "Send an email to peter.parker@photoworld.com, cityscape@photoworld.com about the cityscape photography contest.",
+        "Output": {
+            "Recipients": [
+                "peter.parker@photoworld.com",
+                "cityscape@photoworld.com"
+            ],
+            "topic": "Details and submission guidelines for the cityscape photography contest"
+        }
+    }
+]

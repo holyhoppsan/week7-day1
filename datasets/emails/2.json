@@ -1,0 +1,327 @@
+data = [
+    {
+        "Input": "Email bruce.banner@researchlab.com, hulk.smash@researchlab.com, lab.safety@researchlab.com about the new lab safety protocols.",
+        "Output": {
+            "Recipients": [
+                "bruce.banner@researchlab.com",
+                "hulk.smash@researchlab.com",
+                "lab.safety@researchlab.com"
+            ],
+            "topic": "Introduction of enhanced safety protocols in laboratory environments"
+        }
+    },
+    {
+        "Input": "Draft an announcement for tony.stark@starkindustries.com, r.d@starkindustries.com, innovation@starkindustries.com about the new AI project.",
+        "Output": {
+            "Recipients": [
+                "tony.stark@starkindustries.com",
+                "r.d@starkindustries.com",
+                "innovation@starkindustries.com"
+            ],
+            "topic": "Announcement of a new artificial intelligence project and its potential impacts on various sectors"
+        }
+    },
+    {
+        "Input": "Send a message to jane.doe@example.com, admin@enviro.org, eco.team@example.org about the upcoming environmental summit.",
+        "Output": {
+            "Recipients": [
+                "jane.doe@example.com",
+                "admin@enviro.org",
+                "eco.team@example.org"
+            ],
+            "topic": "Details of the upcoming international environmental summit and key topics of discussion"
+        }
+    },
+    {
+        "Input": "Email peter.parker@photoworld.com, newyork@photoworld.com about the photography exhibition.",
+        "Output": {
+            "Recipients": [
+                "peter.parker@photoworld.com",
+                "newyork@photoworld.com"
+            ],
+            "topic": "Invitation and details for the upcoming photography exhibition in New York"
+        }
+    },
+    {
+        "Input": "Notify clark.kent@dailyplanet.com, lois.lane@dailyplanet.com, editor@dailyplanet.com about the editorial meeting.",
+        "Output": {
+            "Recipients": [
+                "clark.kent@dailyplanet.com",
+                "lois.lane@dailyplanet.com",
+                "editor@dailyplanet.com"
+            ],
+            "topic": "Schedule and agenda for the next editorial meeting"
+        }
+    },
+    {
+        "Input": "Compose an email for steve.rogers@veterans.org, support@veterans.org about the veterans' day event.",
+        "Output": {
+            "Recipients": [
+                "steve.rogers@veterans.org",
+                "support@veterans.org"
+            ],
+            "topic": "Planning and volunteer coordination for the upcoming Veterans' Day event"
+        }
+    },
+    {
+        "Input": "Send a briefing to bruce.wayne@gotham.com, alfred.pennyworth@wayneenterprises.com, lucius.fox@wayneenterprises.com about the new technology grant.",
+        "Output": {
+            "Recipients": [
+                "bruce.wayne@gotham.com",
+                "alfred.pennyworth@wayneenterprises.com",
+                "lucius.fox@wayneenterprises.com"
+            ],
+            "topic": "Opportunities and strategies for utilizing the new technology grant for community projects"
+        }
+    },
+    {
+        "Input": "Message loki.laufeyson@trickstermail.com, magic.events@asgardianmyths.com about the illusionists' gathering.",
+        "Output": {
+            "Recipients": [
+                "loki.laufeyson@trickstermail.com",
+                "magic.events@asgardianmyths.com"
+            ],
+            "topic": "Preparations and key activities planned for the annual illusionists' gathering"
+        }
+    },
+    {
+        "Input": "Draft an update for natasha.romanoff@espionage.com, spy.training@spyagency.com about the espionage training schedule.",
+        "Output": {
+            "Recipients": [
+                "natasha.romanoff@espionage.com",
+                "spy.training@spyagency.com"
+            ],
+            "topic": "Updated schedule and new modules in the espionage training program"
+        }
+    },
+    {
+        "Input": "Alert greg.philips@financecorp.com, accounting@financecorp.com about the annual audit preparations.",
+        "Output": {
+            "Recipients": [
+                "greg.philips@financecorp.com",
+                "accounting@financecorp.com"
+            ],
+            "topic": "Steps and requirements for preparing for the upcoming annual audit"
+        }
+    },
+    {
+        "Input": "Email diana.prince@amazonian.com, warrior.training@amazonian.com about the advanced combat strategies workshop.",
+        "Output": {
+            "Recipients": [
+                "diana.prince@amazonian.com",
+                "warrior.training@amazonian.com"
+            ],
+            "topic": "Schedule and key tactics to be covered in the advanced combat strategies workshop"
+        }
+    },
+    {
+        "Input": "Send an announcement to thor.odinson@asgardianmyths.com, sif@asgardianmyths.com about the mythological artifacts exhibition.",
+        "Output": {
+            "Recipients": [
+                "thor.odinson@asgardianmyths.com",
+                "sif@asgardianmyths.com"
+            ],
+            "topic": "Details of the upcoming exhibition on mythological artifacts and their historical significance"
+        }
+    },
+    {
+        "Input": "Message peter.parker@photoworld.com, city.events@photoworld.com about the urban photography challenge.",
+        "Output": {
+            "Recipients": [
+                "peter.parker@photoworld.com",
+                "city.events@photoworld.com"
+            ],
+            "topic": "Invitation and guidelines for the urban photography challenge"
+        }
+    },
+    {
+        "Input": "Update tony.stark@starkindustries.com, r.d@starkindustries.com, clean.energy@starkindustries.com about the sustainable energy project.",
+        "Output": {
+            "Recipients": [
+                "tony.stark@starkindustries.com",
+                "r.d@starkindustries.com",
+                "clean.energy@starkindustries.com"
+            ],
+            "topic": "Progress and next steps in the sustainable energy project"
+        }
+    },
+    {
+        "Input": "Notify loki.laufeyson@trickstermail.com, odin.allfather@asgardianmyths.com about the Asgardian lore seminar.",
+        "Output": {
+            "Recipients": [
+                "loki.laufeyson@trickstermail.com",
+                "odin.allfather@asgardianmyths.com"
+            ],
+            "topic": "Agenda and speakers for the upcoming seminar on Asgardian lore"
+        }
+    },
+    {
+        "Input": "Email steve.rogers@veterans.org, counseling@veterans.org about the mental health initiative for veterans.",
+        "Output": {
+            "Recipients": [
+                "steve.rogers@veterans.org",
+                "counseling@veterans.org"
+            ],
+            "topic": "Introduction of a new mental health initiative and available resources for veterans"
+        }
+    },
+    {
+        "Input": "Draft a message for bruce.banner@researchlab.com, toxicology@researchlab.com about the chemical safety workshop.",
+        "Output": {
+            "Recipients": [
+                "bruce.banner@researchlab.com",
+                "toxicology@researchlab.com"
+            ],
+            "topic": "Schedule and essential topics for the upcoming chemical safety workshop"
+        }
+    },
+    {
+        "Input": "Send a briefing to clark.kent@dailyplanet.com, investigative@dailyplanet.com about the corruption case follow-up.",
+        "Output": {
+            "Recipients": [
+                "clark.kent@dailyplanet.com",
+                "investigative@dailyplanet.com"
+            ],
+            "topic": "Latest findings and next steps in the ongoing investigation of the corruption case"
+        }
+    },
+    {
+        "Input": "Notify natasha.romanoff@espionage.com, field.agents@spyagency.com about the undercover operations debrief.",
+        "Output": {
+            "Recipients": [
+                "natasha.romanoff@espionage.com",
+                "field.agents@spyagency.com"
+            ],
+            "topic": "Details of the debrief session for recent undercover operations"
+        }
+    },
+    {
+        "Input": "Compose an email for jane.doe@example.com, admin@enviro.org about the global warming conference.",
+        "Output": {
+            "Recipients": [
+                "jane.doe@example.com",
+                "admin@enviro.org"
+            ],
+            "topic": "Logistics and key discussion points for the upcoming global warming conference"
+        }
+    },
+    {
+        "Input": "Email bruce.wayne@gotham.com, security@wayneenterprises.com about the new security system installation.",
+        "Output": {
+            "Recipients": [
+                "bruce.wayne@gotham.com",
+                "security@wayneenterprises.com"
+            ],
+            "topic": "Timeline and requirements for the installation of the new security system"
+        }
+    },
+    {
+        "Input": "Send a message to diana.prince@amazonian.com, events@amazonian.com about the warrior rites ceremony.",
+        "Output": {
+            "Recipients": [
+                "diana.prince@amazonian.com",
+                "events@amazonian.com"
+            ],
+            "topic": "Preparations and traditions involved in the upcoming warrior rites ceremony"
+        }
+    },
+    {
+        "Input": "Draft an update for thor.odinson@asgardianmyths.com, loki.laufeyson@trickstermail.com about the relic restoration project.",
+        "Output": {
+            "Recipients": [
+                "thor.odinson@asgardianmyths.com",
+                "loki.laufeyson@trickstermail.com"
+            ],
+            "topic": "Progress and challenges in the relic restoration project"
+        }
+    },
+    {
+        "Input": "Alert greg.philips@financecorp.com about the cost reduction strategies meeting.",
+        "Output": {
+            "Recipients": [
+                "greg.philips@financecorp.com"
+            ],
+            "topic": "Agenda and objectives for the meeting on cost reduction strategies"
+        }
+    },
+    {
+        "Input": "Email natasha.romanoff@espionage.com, covert.ops@spyagency.com about the new intelligence gathering techniques.",
+        "Output": {
+            "Recipients": [
+                "natasha.romanoff@espionage.com",
+                "covert.ops@spyagency.com"
+            ],
+            "topic": "Overview of new techniques for intelligence gathering and their implementation"
+        }
+    },
+    {
+        "Input": "Send an announcement to tony.stark@starkindustries.com, media.relations@starkindustries.com about the press release.",
+        "Output": {
+            "Recipients": [
+                "tony.stark@starkindustries.com",
+                "media.relations@starkindustries.com"
+            ],
+            "topic": "Content and timing for the upcoming press release regarding corporate expansions"
+        }
+    },
+    {
+        "Input": "Message bruce.banner@researchlab.com, safety@researchlab.com about the radiation safety course.",
+        "Output": {
+            "Recipients": [
+                "bruce.banner@researchlab.com",
+                "safety@researchlab.com"
+            ],
+            "topic": "Curriculum and enrollment details for the new radiation safety course"
+        }
+    },
+    {
+        "Input": "Draft an email to peter.parker@photoworld.com, workshops@photoworld.com about the landscape photography retreat.",
+        "Output": {
+            "Recipients": [
+                "peter.parker@photoworld.com",
+                "workshops@photoworld.com"
+            ],
+            "topic": "Details and registration process for the upcoming landscape photography retreat"
+        }
+    },
+    {
+        "Input": "Notify clark.kent@dailyplanet.com, news.team@dailyplanet.com about the special report series.",
+        "Output": {
+            "Recipients": [
+                "clark.kent@dailyplanet.com",
+                "news.team@dailyplanet.com"
+            ],
+            "topic": "Themes and publication schedule for the special report series on urban development"
+        }
+    },
+    {
+        "Input": "Email steve.rogers@veterans.org, events@veterans.org about the charity gala.",
+        "Output": {
+            "Recipients": [
+                "steve.rogers@veterans.org",
+                "events@veterans.org"
+            ],
+            "topic": "Organizational details and guest list for the upcoming charity gala for veterans"
+        }
+    },
+    {
+        "Input": "Send a message to bruce.wayne@gotham.com, alfred.pennyworth@wayneenterprises.com about the charity auction.",
+        "Output": {
+            "Recipients": [
+                "bruce.wayne@gotham.com",
+                "alfred.pennyworth@wayneenterprises.com"
+            ],
+            "topic": "Planning and item list for the charity auction benefiting Gotham's underprivileged youth"
+        }
+    },
+    {
+        "Input": "Draft an update for loki.laufeyson@trickstermail.com, events@asgardianmyths.com about the trickster festival.",
+        "Output": {
+            "Recipients": [
+                "loki.laufeyson@trickstermail.com",
+                "events@asgardianmyths.com"
+            ],
+            "topic": "Schedule and main attractions at the upcoming trickster festival"
+        }
+    }
+]

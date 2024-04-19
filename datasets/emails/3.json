@@ -1,0 +1,322 @@
+data = [
+    {
+        "Input": "Email simon.peterson@bookworld.com, reviews@bookworld.com about the new author spotlight feature.",
+        "Output": {
+            "Recipients": [
+                "simon.peterson@bookworld.com",
+                "reviews@bookworld.com"
+            ],
+            "topic": "Introduction and planning for the new author spotlight feature in our monthly newsletter"
+        }
+    },
+    {
+        "Input": "Send an update to laura.smith@healthclinic.com, appointments@healthclinic.com about the new patient portal.",
+        "Output": {
+            "Recipients": [
+                "laura.smith@healthclinic.com",
+                "appointments@healthclinic.com"
+            ],
+            "topic": "Launch details and user guide for the new patient portal"
+        }
+    },
+    {
+        "Input": "Draft an email to helen.jones@techpioneers.com, support@techpioneers.com about the upcoming software update.",
+        "Output": {
+            "Recipients": [
+                "helen.jones@techpioneers.com",
+                "support@techpioneers.com"
+            ],
+            "topic": "Features and release schedule for the upcoming software update"
+        }
+    },
+    {
+        "Input": "Notify carl.marks@culinaryworld.com, events@culinaryworld.com about the master chef workshop.",
+        "Output": {
+            "Recipients": [
+                "carl.marks@culinaryworld.com",
+                "events@culinaryworld.com"
+            ],
+            "topic": "Itinerary and special guests for the upcoming master chef workshop"
+        }
+    },
+    {
+        "Input": "Email janet.rhodes@financeservices.com, client.services@financeservices.com about the retirement planning webinar.",
+        "Output": {
+            "Recipients": [
+                "janet.rhodes@financeservices.com",
+                "client.services@financeservices.com"
+            ],
+            "topic": "Agenda and registration details for the retirement planning webinar"
+        }
+    },
+    {
+        "Input": "Send a briefing to alan.moore@cinemagic.com, pr@cinemagic.com about the film festival sponsorship.",
+        "Output": {
+            "Recipients": [
+                "alan.moore@cinemagic.com",
+                "pr@cinemagic.com"
+            ],
+            "topic": "Outline and benefits of sponsoring the upcoming international film festival"
+        }
+    },
+    {
+        "Input": "Draft a message for jenny.wright@ecoactivists.org, newsletter@ecoactivists.org about the river clean-up campaign.",
+        "Output": {
+            "Recipients": [
+                "jenny.wright@ecoactivists.org",
+                "newsletter@ecoactivists.org"
+            ],
+            "topic": "Campaign goals and volunteer requirements for the river clean-up initiative"
+        }
+    },
+    {
+        "Input": "Alert mike.johnson@autoservices.com, bookings@autoservices.com about the new car maintenance packages.",
+        "Output": {
+            "Recipients": [
+                "mike.johnson@autoservices.com",
+                "bookings@autoservices.com"
+            ],
+            "topic": "Features and pricing for the new comprehensive car maintenance packages"
+        }
+    },
+    {
+        "Input": "Email sarah.connor@vintagefashion.com, offers@vintagefashion.com about the upcoming vintage clothing sale.",
+        "Output": {
+            "Recipients": [
+                "sarah.connor@vintagefashion.com",
+                "offers@vintagefashion.com"
+            ],
+            "topic": "Details and highlights of the upcoming vintage clothing sale"
+        }
+    },
+    {
+        "Input": "Send an update to paul.anderson@musicfest.com, tickets@musicfest.com about the festival lineup.",
+        "Output": {
+            "Recipients": [
+                "paul.anderson@musicfest.com",
+                "tickets@musicfest.com"
+            ],
+            "topic": "Announcement of the final lineup and special events at the music festival"
+        }
+    },
+    {
+        "Input": "Draft an email to tina.evans@realestate.com, listings@realestate.com about the new property listings.",
+        "Output": {
+            "Recipients": [
+                "tina.evans@realestate.com",
+                "listings@realestate.com"
+            ],
+            "topic": "Overview and features of new property listings available this month"
+        }
+    },
+    {
+        "Input": "Notify rachel.green@fashionweek.com, designers@fashionweek.com about the runway event schedule.",
+        "Output": {
+            "Recipients": [
+                "rachel.green@fashionweek.com",
+                "designers@fashionweek.com"
+            ],
+            "topic": "Timeline and participant instructions for the upcoming runway event at fashion week"
+        }
+    },
+    {
+        "Input": "Email greg.taylor@urbanplanning.com, projects@urbanplanning.com about the city park renovation project.",
+        "Output": {
+            "Recipients": [
+                "greg.taylor@urbanplanning.com",
+                "projects@urbanplanning.com"
+            ],
+            "topic": "Project scope and community impact of the city park renovation project"
+        }
+    },
+    {
+        "Input": "Send a briefing to linda.white@petservices.com, appointments@petservices.com about the new pet grooming services.",
+        "Output": {
+            "Recipients": [
+                "linda.white@petservices.com",
+                "appointments@petservices.com"
+            ],
+            "topic": "Introduction of new pet grooming services and promotional offers"
+        }
+    },
+    {
+        "Input": "Draft a message for frank.hill@educationcenter.com, admissions@educationcenter.com about the scholarship program.",
+        "Output": {
+            "Recipients": [
+                "frank.hill@educationcenter.com",
+                "admissions@educationcenter.com"
+            ],
+            "topic": "Criteria and application process for the new scholarship program"
+        }
+    },
+    {
+        "Input": "Alert julia.sanders@eventplanning.com, vendors@eventplanning.com about the conference logistics.",
+        "Output": {
+            "Recipients": [
+                "julia.sanders@eventplanning.com",
+                "vendors@eventplanning.com"
+            ],
+            "topic": "Logistics and vendor coordination for the upcoming industry conference"
+        }
+    },
+    {
+        "Input": "Email eric.knight@techexpo.com, exhibitors@techexpo.com about the exhibition space allocations.",
+        "Output": {
+            "Recipients": [
+                "eric.knight@techexpo.com",
+                "exhibitors@techexpo.com"
+            ],
+            "topic": "Details and layout of exhibition spaces for the upcoming tech expo"
+        }
+    },
+    {
+        "Input": "Send an update to maria.lopez@languageinstitute.com, courses@languageinstitute.com about the new language courses.",
+        "Output": {
+            "Recipients": [
+                "maria.lopez@languageinstitute.com",
+                "courses@languageinstitute.com"
+            ],
+            "topic": "Launch and curriculum details of new language courses available"
+        }
+    },
+    {
+        "Input": "Draft an email to steve.roberts@healthexpo.com, sponsors@healthexpo.com about the health screening booths.",
+        "Output": {
+            "Recipients": [
+                "steve.roberts@healthexpo.com",
+                "sponsors@healthexpo.com"
+            ],
+            "topic": "Setup and operation of health screening booths at the upcoming health expo"
+        }
+    },
+    {
+        "Input": "Notify kelly.thomas@nightlife.com, promotions@nightlife.com about the new year's eve party plans.",
+        "Output": {
+            "Recipients": [
+                "kelly.thomas@nightlife.com",
+                "promotions@nightlife.com"
+            ],
+            "topic": "Themes, guest DJs, and ticketing for the new year's eve party"
+        }
+    },
+    {
+        "Input": "Email lucas.graham@bakingworld.com, suppliers@bakingworld.com about the annual baker's conference.",
+        "Output": {
+            "Recipients": [
+                "lucas.graham@bakingworld.com",
+                "suppliers@bakingworld.com"
+            ],
+            "topic": "Schedule and workshop details for the annual baker's conference"
+        }
+    },
+    {
+        "Input": "Send a briefing to amanda.wilson@childcare.com, staff@childcare.com about the updated child safety protocols.",
+        "Output": {
+            "Recipients": [
+                "amanda.wilson@childcare.com",
+                "staff@childcare.com"
+            ],
+            "topic": "Implementation and training for updated child safety protocols"
+        }
+    },
+    {
+        "Input": "Draft a message for oliver.scott@marinebio.com, research@marinebio.com about the coral reef preservation project.",
+        "Output": {
+            "Recipients": [
+                "oliver.scott@marinebio.com",
+                "research@marinebio.com"
+            ],
+            "topic": "Funding, objectives, and expected outcomes of the coral reef preservation project"
+        }
+    },
+    {
+        "Input": "Alert diane.brooks@yogastudio.com, members@yogastudio.com about the wellness retreat.",
+        "Output": {
+            "Recipients": [
+                "diane.brooks@yogastudio.com",
+                "members@yogastudio.com"
+            ],
+            "topic": "Itinerary and special sessions at the upcoming wellness retreat"
+        }
+    },
+    {
+        "Input": "Email benjamin.clark@automotiveworld.com, sales@automotiveworld.com about the electric vehicle showcase.",
+        "Output": {
+            "Recipients": [
+                "benjamin.clark@automotiveworld.com",
+                "sales@automotiveworld.com"
+            ],
+            "topic": "Details and highlights of the electric vehicle showcase event"
+        }
+    },
+    {
+        "Input": "Send an update to nancy.moore@hospitals.com, staff@hospitals.com about the healthcare reform seminar.",
+        "Output": {
+            "Recipients": [
+                "nancy.moore@hospitals.com",
+                "staff@hospitals.com"
+            ],
+            "topic": "Keynote speakers and discussion topics for the healthcare reform seminar"
+        }
+    },
+    {
+        "Input": "Draft an email to carlos.sanchez@constructionworld.com, projects@constructionworld.com about the urban development grant.",
+        "Output": {
+            "Recipients": [
+                "carlos.sanchez@constructionworld.com",
+                "projects@constructionworld.com"
+            ],
+            "topic": "Opportunities and application guidelines for the urban development grant"
+        }
+    },
+    {
+        "Input": "Alert hannah.lee@designworld.com, creative@designworld.com about the graphic design competition.",
+        "Output": {
+            "Recipients": [
+                "hannah.lee@designworld.com",
+                "creative@designworld.com"
+            ],
+            "topic": "Entry requirements and judging criteria for the graphic design competition"
+        }
+    },
+    {
+        "Input": "Email sophia.davis@musicworld.com, artists@musicworld.com about the talent search event.",
+        "Output": {
+            "Recipients": [
+                "sophia.davis@musicworld.com",
+                "artists@musicworld.com"
+            ],
+            "topic": "Scouting locations and audition process for the upcoming talent search event"
+        }
+    },
+    {
+        "Input": "Send a briefing to ethan.jones@techworld.com, developers@techworld.com about the hackathon event.",
+        "Output": {
+            "Recipients": [
+                "ethan.jones@techworld.com",
+                "developers@techworld.com"
+            ],
+            "topic": "Themes, prizes, and registration for the annual tech world hackathon"
+        }
+    },
+    {
+        "Input": "Draft a message for abigail.williams@ecoenergy.com, partners@ecoenergy.com about the sustainable energy symposium.",
+        "Output": {
+            "Recipients": [
+                "abigail.williams@ecoenergy.com",
+                "partners@ecoenergy.com"
+            ],
+            "topic": "Keynote speakers and workshop sessions for the sustainable energy symposium"
+        }
+    },
+    {
+        "Input": "Alert james.wilson@petsupplies.com, marketing@petsupplies.com about the pet adoption fair.",
+        "Output": {
+            "Recipients": [
+                "james.wilson@petsupplies.com",
+                "marketing@petsupplies.com"
+            ],
+            "topic": "Planning and community outreach for the upcoming pet adoption fair"
+        }
+    }
+]

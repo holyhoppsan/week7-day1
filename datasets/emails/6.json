@@ -1,0 +1,302 @@
+data = [
+    {
+        "Input": "Email aaron.clarke@microbrews.com, sales@microbrews.com about the craft beer festival.",
+        "Output": {
+            "Recipients": [
+                "aaron.clarke@microbrews.com",
+                "sales@microbrews.com"
+            ],
+            "topic": "Event details and special brews featured at the craft beer festival"
+        }
+    },
+    {
+        "Input": "Send an update to nicole.hart@communitygarden.com, members@communitygarden.com about the spring planting schedule.",
+        "Output": {
+            "Recipients": [
+                "nicole.hart@communitygarden.com",
+                "members@communitygarden.com"
+            ],
+            "topic": "Planting guidelines and volunteer shifts for the community garden spring season"
+        }
+    },
+    {
+        "Input": "Draft an email to carl.washington@vintagecars.com, collectors@vintagecars.com about the classic car auction.",
+        "Output": {
+            "Recipients": [
+                "carl.washington@vintagecars.com",
+                "collectors@vintagecars.com"
+            ],
+            "topic": "Auction catalog and bidding procedures for the classic car auction"
+        }
+    },
+    {
+        "Input": "Notify diane.prince@womensconference.com, speakers@womensconference.com about the leadership panel.",
+        "Output": {
+            "Recipients": [
+                "diane.prince@womensconference.com",
+                "speakers@womensconference.com"
+            ],
+            "topic": "Panel discussion topics and speaker bios for the leadership panel at the women's conference"
+        }
+    },
+    {
+        "Input": "Email gary.fisher@seasidemarina.com, boaters@seasidemarina.com about the summer regatta.",
+        "Output": {
+            "Recipients": [
+                "gary.fisher@seasidemarina.com",
+                "boaters@seasidemarina.com"
+            ],
+            "topic": "Regatta rules and registration deadlines for the summer sailing competition"
+        }
+    },
+    {
+        "Input": "Send a briefing to heather.small@publicart.com, artists@publicart.com about the mural festival.",
+        "Output": {
+            "Recipients": [
+                "heather.small@publicart.com",
+                "artists@publicart.com"
+            ],
+            "topic": "Themes and material supplies for artists participating in the mural festival"
+        }
+    },
+    {
+        "Input": "Draft an email to joel.sanders@roboticslab.com, projects@roboticslab.com about the automation showcase.",
+        "Output": {
+            "Recipients": [
+                "joel.sanders@roboticslab.com",
+                "projects@roboticslab.com"
+            ],
+            "topic": "Demonstration schedule and featured technologies at the automation showcase"
+        }
+    },
+    {
+        "Input": "Notify megan.bates@childrensmuseum.com, events@childrensmuseum.com about the interactive exhibit launch.",
+        "Output": {
+            "Recipients": [
+                "megan.bates@childrensmuseum.com",
+                "events@childrensmuseum.com"
+            ],
+            "topic": "Launch event details and educational goals for the new interactive exhibit for children"
+        }
+    },
+    {
+        "Input": "Email luke.rhodes@citytheatre.com, patrons@citytheatre.com about the season opening gala.",
+        "Output": {
+            "Recipients": [
+                "luke.rhodes@citytheatre.com",
+                "patrons@citytheatre.com"
+            ],
+            "topic": "Gala itinerary and special performances scheduled for the theatre season opening"
+        }
+    },
+    {
+        "Input": "Send an update to jasmine.kelly@localnews.com, reporters@localnews.com about the community impact series.",
+        "Output": {
+            "Recipients": [
+                "jasmine.kelly@localnews.com",
+                "reporters@localnews.com"
+            ],
+            "topic": "Series outline and story assignments for the community impact news series"
+        }
+    },
+    {
+        "Input": "Draft an email to ethan.long@ecoenergy.com, clients@ecoenergy.com about the solar panel installation service.",
+        "Output": {
+            "Recipients": [
+                "ethan.long@ecoenergy.com",
+                "clients@ecoenergy.com"
+            ],
+            "topic": "Service details and promotional discounts for new solar panel installations"
+        }
+    },
+    {
+        "Input": "Notify claire.newton@hightechtoys.com, marketing@hightechtoys.com about the product launch webinar.",
+        "Output": {
+            "Recipients": [
+                "claire.newton@hightechtoys.com",
+                "marketing@hightechtoys.com"
+            ],
+            "topic": "Webinar agenda and featured products for the high-tech toy launch"
+        }
+    },
+    {
+        "Input": "Email kevin.cole@watersports.com, registration@watersports.com about the kayaking workshop.",
+        "Output": {
+            "Recipients": [
+                "kevin.cole@watersports.com",
+                "registration@watersports.com"
+            ],
+            "topic": "Workshop schedule and required gear for participants in the kayaking workshop"
+        }
+    },
+    {
+        "Input": "Send a briefing to olivia.martin@planetarium.com, education@planetarium.com about the night sky viewing event.",
+        "Output": {
+            "Recipients": [
+                "olivia.martin@planetarium.com",
+                "education@planetarium.com"
+            ],
+            "topic": "Viewing schedule and celestial events featured at the night sky viewing"
+        }
+    },
+    {
+        "Input": "Draft an email to jacob.west@internationalfestival.com, performers@internationalfestival.com about the cultural parade.",
+        "Output": {
+            "Recipients": [
+                "jacob.west@internationalfestival.com",
+                "performers@internationalfestival.com"
+            ],
+            "topic": "Parade route and participant instructions for the international cultural parade"
+        }
+    },
+    {
+        "Input": "Notify stephanie.hill@heritagemuseum.com, guides@heritagemuseum.com about the historical reenactment day.",
+        "Output": {
+            "Recipients": [
+                "stephanie.hill@heritagemuseum.com",
+                "guides@heritagemuseum.com"
+            ],
+            "topic": "Reenactment scripts and wardrobe requirements for the historical reenactment day"
+        }
+    },
+    {
+        "Input": "Email tony.stewart@motorsportevents.com, racers@motorsportevents.com about the rally race.",
+        "Output": {
+            "Recipients": [
+                "tony.stewart@motorsportevents.com",
+                "racers@motorsportevents.com"
+            ],
+            "topic": "Race itinerary and safety protocols for participants in the upcoming rally race"
+        }
+    },
+    {
+        "Input": "Send an update to sarah.jones@petexpo.com, vendors@petexpo.com about the pet adoption drive.",
+        "Output": {
+            "Recipients": [
+                "sarah.jones@petexpo.com",
+                "vendors@petexpo.com"
+            ],
+            "topic": "Vendor roles and schedule for the pet adoption drive at the expo"
+        }
+    },
+    {
+        "Input": "Draft an email to ben.thomas@mountainresort.com, guests@mountainresort.com about the winter sports season opening.",
+        "Output": {
+            "Recipients": [
+                "ben.thomas@mountainresort.com",
+                "guests@mountainresort.com"
+            ],
+            "topic": "Opening day activities and special events for the winter sports season"
+        }
+    },
+    {
+        "Input": "Notify emma.cooper@genomicslab.com, research@genomicslab.com about the gene editing workshop.",
+        "Output": {
+            "Recipients": [
+                "emma.cooper@genomicslab.com",
+                "research@genomicslab.com"
+            ],
+            "topic": "Workshop dates and focus topics for the gene editing techniques workshop"
+        }
+    },
+    {
+        "Input": "Email alex.king@musicacademy.com, students@musicacademy.com about the masterclass series with famous musicians.",
+        "Output": {
+            "Recipients": [
+                "alex.king@musicacademy.com",
+                "students@musicacademy.com"
+            ],
+            "topic": "Masterclass schedule and registration details for sessions with renowned musicians"
+        }
+    },
+    {
+        "Input": "Send a briefing to nora.phillips@architects.com, projects@architects.com about the sustainable architecture award.",
+        "Output": {
+            "Recipients": [
+                "nora.phillips@architects.com",
+                "projects@architects.com"
+            ],
+            "topic": "Award criteria and submission deadlines for the sustainable architecture competition"
+        }
+    },
+    {
+        "Input": "Draft an email to owen.harris@cityplanning.com, urban@cityplanning.com about the urban greening initiatives.",
+        "Output": {
+            "Recipients": [
+                "owen.harris@cityplanning.com",
+                "urban@cityplanning.com"
+            ],
+            "topic": "Details and community benefits of upcoming urban greening projects"
+        }
+    },
+    {
+        "Input": "Notify lily.roberts@environment.org, activists@environment.org about the climate change rally.",
+        "Output": {
+            "Recipients": [
+                "lily.roberts@environment.org",
+                "activists@environment.org"
+            ],
+            "topic": "Rally objectives and speaker list for the climate change awareness event"
+        }
+    },
+    {
+        "Input": "Email mason.james@codingcamp.com, instructors@codingcamp.com about the summer coding bootcamp.",
+        "Output": {
+            "Recipients": [
+                "mason.james@codingcamp.com",
+                "instructors@codingcamp.com"
+            ],
+            "topic": "Bootcamp curriculum and student assignments for the summer coding program"
+        }
+    },
+    {
+        "Input": "Send an update to isabella.watson@baking.com, participants@baking.com about the dessert making contest.",
+        "Output": {
+            "Recipients": [
+                "isabella.watson@baking.com",
+                "participants@baking.com"
+            ],
+            "topic": "Contest rules and prize information for the annual dessert making competition"
+        }
+    },
+    {
+        "Input": "Draft an email to elijah.wood@wildliferescue.com, volunteers@wildliferescue.com about the rescue operation training.",
+        "Output": {
+            "Recipients": [
+                "elijah.wood@wildliferescue.com",
+                "volunteers@wildliferescue.com"
+            ],
+            "topic": "Training schedule and necessary preparations for upcoming wildlife rescue operations"
+        }
+    },
+    {
+        "Input": "Notify charlotte.jones@seminars.com, attendees@seminars.com about the personal development series.",
+        "Output": {
+            "Recipients": [
+                "charlotte.jones@seminars.com",
+                "attendees@seminars.com"
+            ],
+            "topic": "Series topics and speaker details for the personal development seminar series"
+        }
+    },
+    {
+        "Input": "Email mia.williams@urbanfarms.com, community@urbanfarms.com about the local food market day.",
+        "Output": {
+            "Recipients": [
+                "mia.williams@urbanfarms.com",
+                "community@urbanfarms.com"
+            ],
+            "topic": "Market activities and local vendor list for the upcoming local food market day"
+        }
+    },
+    {
+        "Input": "Send a briefing to lucas.scott@sciencecenter.com, education@sciencecenter.com about the interactive science exhibits.",
+        "Output": {
+            "Recipients": [
+                "lucas.scott@sciencecenter.com",
+                "education@sciencecenter.com"
+            ],
+            "topic": "New exhibits and educational goals for the interactive science exhibit launch"
+        }
+    }
+]

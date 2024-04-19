@@ -1,0 +1,312 @@
+data = [
+    {
+        "Input": "Email jason.miller@agritech.com, partners@agritech.com about the smart farming technology expo.",
+        "Output": {
+            "Recipients": [
+                "jason.miller@agritech.com",
+                "partners@agritech.com"
+            ],
+            "topic": "Schedule and keynote speakers for the smart farming technology expo"
+        }
+    },
+    {
+        "Input": "Send a briefing to alice.johnson@medequip.com, sales@medequip.com about the medical equipment trade show.",
+        "Output": {
+            "Recipients": [
+                "alice.johnson@medequip.com",
+                "sales@medequip.com"
+            ],
+            "topic": "Exhibitor list and booth assignment for the upcoming medical equipment trade show"
+        }
+    },
+    {
+        "Input": "Draft an email to mark.robinson@cybersecurity.com, alerts@cybersecurity.com about the new data protection regulations.",
+        "Output": {
+            "Recipients": [
+                "mark.robinson@cybersecurity.com",
+                "alerts@cybersecurity.com"
+            ],
+            "topic": "Overview and compliance guidelines for the new data protection regulations"
+        }
+    },
+    {
+        "Input": "Notify emma.wilson@retailgiant.com, marketing@retailgiant.com about the summer sales campaign.",
+        "Output": {
+            "Recipients": [
+                "emma.wilson@retailgiant.com",
+                "marketing@retailgiant.com"
+            ],
+            "topic": "Themes and major discounts for the upcoming summer sales campaign"
+        }
+    },
+    {
+        "Input": "Email liam.smith@corporatewellness.com, programs@corporatewellness.com about the new wellness program launch.",
+        "Output": {
+            "Recipients": [
+                "liam.smith@corporatewellness.com",
+                "programs@corporatewellness.com"
+            ],
+            "topic": "Features and enrollment process for the new corporate wellness program"
+        }
+    },
+    {
+        "Input": "Send an update to olivia.brown@events.com, vendors@events.com about the outdoor festival arrangements.",
+        "Output": {
+            "Recipients": [
+                "olivia.brown@events.com",
+                "vendors@events.com"
+            ],
+            "topic": "Vendor spaces and setup times for the upcoming outdoor festival"
+        }
+    },
+    {
+        "Input": "Draft a message for noah.jones@finearts.com, gallery@finearts.com about the contemporary art auction.",
+        "Output": {
+            "Recipients": [
+                "noah.jones@finearts.com",
+                "gallery@finearts.com"
+            ],
+            "topic": "Catalog of artworks and bidding instructions for the contemporary art auction"
+        }
+    },
+    {
+        "Input": "Alert sophia.green@cosmeticsbrand.com, pr@cosmeticsbrand.com about the product launch event.",
+        "Output": {
+            "Recipients": [
+                "sophia.green@cosmeticsbrand.com",
+                "pr@cosmeticsbrand.com"
+            ],
+            "topic": "Agenda and media invites for the new skincare line launch event"
+        }
+    },
+    {
+        "Input": "Email benjamin.king@lawfirm.com, associates@lawfirm.com about the legal workshop for startups.",
+        "Output": {
+            "Recipients": [
+                "benjamin.king@lawfirm.com",
+                "associates@lawfirm.com"
+            ],
+            "topic": "Workshop topics and registration details for legal issues facing startups"
+        }
+    },
+    {
+        "Input": "Send a briefing to mia.white@renewableenergy.com, projects@renewableenergy.com about the wind energy project.",
+        "Output": {
+            "Recipients": [
+                "mia.white@renewableenergy.com",
+                "projects@renewableenergy.com"
+            ],
+            "topic": "Project milestones and upcoming site evaluations for the wind energy project"
+        }
+    },
+    {
+        "Input": "Draft an email to lucas.hill@spaceagency.com, media@spaceagency.com about the satellite launch.",
+        "Output": {
+            "Recipients": [
+                "lucas.hill@spaceagency.com",
+                "media@spaceagency.com"
+            ],
+            "topic": "Launch window and objectives for the new communications satellite"
+        }
+    },
+    {
+        "Input": "Notify charlotte.scott@culinaryinstitute.com, students@culinaryinstitute.com about the guest chef series.",
+        "Output": {
+            "Recipients": [
+                "charlotte.scott@culinaryinstitute.com",
+                "students@culinaryinstitute.com"
+            ],
+            "topic": "Schedule and featured chefs for the upcoming guest chef series"
+        }
+    },
+    {
+        "Input": "Email amelia.martin@petrescue.com, volunteers@petrescue.com about the adoption weekend event.",
+        "Output": {
+            "Recipients": [
+                "amelia.martin@petrescue.com",
+                "volunteers@petrescue.com"
+            ],
+            "topic": "Event schedule and volunteer assignments for the pet adoption weekend"
+        }
+    },
+    {
+        "Input": "Send an update to evelyn.clark@educationfund.com, donors@educationfund.com about the scholarship fund gala.",
+        "Output": {
+            "Recipients": [
+                "evelyn.clark@educationfund.com",
+                "donors@educationfund.com"
+            ],
+            "topic": "Gala program and keynote speakers for the scholarship fund gala"
+        }
+    },
+    {
+        "Input": "Draft a message for logan.wright@internationaltrade.com, members@internationaltrade.com about the import-export regulations update.",
+        "Output": {
+            "Recipients": [
+                "logan.wright@internationaltrade.com",
+                "members@internationaltrade.com"
+            ],
+            "topic": "Summary of updated import-export regulations and their impact on members"
+        }
+    },
+    {
+        "Input": "Alert harper.lewis@fashionhouse.com, design@fashionhouse.com about the spring collection design meeting.",
+        "Output": {
+            "Recipients": [
+                "harper.lewis@fashionhouse.com",
+                "design@fashionhouse.com"
+            ],
+            "topic": "Themes and inspiration for the upcoming spring collection design meeting"
+        }
+    },
+    {
+        "Input": "Email ethan.thomas@vintagewine.com, sales@vintagewine.com about the wine tasting event.",
+        "Output": {
+            "Recipients": [
+                "ethan.thomas@vintagewine.com",
+                "sales@vintagewine.com"
+            ],
+            "topic": "Selection of wines and guest sommeliers for the wine tasting event"
+        }
+    },
+    {
+        "Input": "Send an update to madison.moore@cosmetics.com, marketing@cosmetics.com about the influencer collaboration.",
+        "Output": {
+            "Recipients": [
+                "madison.moore@cosmetics.com",
+                "marketing@cosmetics.com"
+            ],
+            "topic": "Details of the influencer collaboration and campaign launch plans"
+        }
+    },
+    {
+        "Input": "Draft an email to mason.davis@automotiveinnovations.com, engineering@automotiveinnovations.com about the autonomous vehicle trials.",
+        "Output": {
+            "Recipients": [
+                "mason.davis@automotiveinnovations.com",
+                "engineering@automotiveinnovations.com"
+            ],
+            "topic": "Timeline and test locations for the autonomous vehicle trials"
+        }
+    },
+    {
+        "Input": "Notify isabella.wilson@ngo.org, partners@ngo.org about the humanitarian aid conference.",
+        "Output": {
+            "Recipients": [
+                "isabella.wilson@ngo.org",
+                "partners@ngo.org"
+            ],
+            "topic": "Conference agenda and panel discussions on humanitarian aid"
+        }
+    },
+    {
+        "Input": "Email james.taylor@biotech.com, research@biotech.com about the new gene therapy research.",
+        "Output": {
+            "Recipients": [
+                "james.taylor@biotech.com",
+                "research@biotech.com"
+            ],
+            "topic": "Overview of the new gene therapy techniques and upcoming clinical trials"
+        }
+    },
+    {
+        "Input": "Send a briefing to sophie.anderson@architects.com, projects@architects.com about the sustainable building design competition.",
+        "Output": {
+            "Recipients": [
+                "sophie.anderson@architects.com",
+                "projects@architects.com"
+            ],
+            "topic": "Entry criteria and judging panel for the sustainable building design competition"
+        }
+    },
+    {
+        "Input": "Draft an email to jackson.thompson@urbanfarmers.com, community@urbanfarmers.com about the community gardening initiative.",
+        "Output": {
+            "Recipients": [
+                "jackson.thompson@urbanfarmers.com",
+                "community@urbanfarmers.com"
+            ],
+            "topic": "Workshop schedule and resources available for the community gardening initiative"
+        }
+    },
+    {
+        "Input": "Notify sebastian.harris@luxuryhotels.com, reservations@luxuryhotels.com about the VIP guest protocol update.",
+        "Output": {
+            "Recipients": [
+                "sebastian.harris@luxuryhotels.com",
+                "reservations@luxuryhotels.com"
+            ],
+            "topic": "Revised protocol and staff training dates for handling VIP guests"
+        }
+    },
+    {
+        "Input": "Email avery.robinson@spacetravel.com, bookings@spacetravel.com about the commercial space flight tickets.",
+        "Output": {
+            "Recipients": [
+                "avery.robinson@spacetravel.com",
+                "bookings@spacetravel.com"
+            ],
+            "topic": "Pricing, schedule, and booking process for commercial space flights"
+        }
+    },
+    {
+        "Input": "Send an update to scarlett.martinez@fashionmagazine.com, editorial@fashionmagazine.com about the fall fashion trends article.",
+        "Output": {
+            "Recipients": [
+                "scarlett.martinez@fashionmagazine.com",
+                "editorial@fashionmagazine.com"
+            ],
+            "topic": "Key trends and feature pieces for the fall fashion trends article"
+        }
+    },
+    {
+        "Input": "Draft a message for zoe.white@publicrelations.com, clients@publicrelations.com about the crisis management workshop.",
+        "Output": {
+            "Recipients": [
+                "zoe.white@publicrelations.com",
+                "clients@publicrelations.com"
+            ],
+            "topic": "Workshop objectives and case studies to be discussed at the crisis management workshop"
+        }
+    },
+    {
+        "Input": "Alert leo.walker@techsolutions.com, support@techsolutions.com about the system upgrade.",
+        "Output": {
+            "Recipients": [
+                "leo.walker@techsolutions.com",
+                "support@techsolutions.com"
+            ],
+            "topic": "Upgrade features and scheduled downtime for the system upgrade"
+        }
+    },
+    {
+        "Input": "Email chloe.king@eventmanagement.com, logistics@eventmanagement.com about the international conference planning.",
+        "Output": {
+            "Recipients": [
+                "chloe.king@eventmanagement.com",
+                "logistics@eventmanagement.com"
+            ],
+            "topic": "Planning milestones and venue details for the international conference"
+        }
+    },
+    {
+        "Input": "Send a briefing to david.lee@musicstudio.com, artists@musicstudio.com about the recording studio upgrades.",
+        "Output": {
+            "Recipients": [
+                "david.lee@musicstudio.com",
+                "artists@musicstudio.com"
+            ],
+            "topic": "New equipment and booking system for the recording studio upgrades"
+        }
+    },
+    {
+        "Input": "Draft a message for lily.turner@nonprofitfoundation.com, donors@nonprofitfoundation.com about the annual fundraising gala.",
+        "Output": {
+            "Recipients": [
+                "lily.turner@nonprofitfoundation.com",
+                "donors@nonprofitfoundation.com"
+            ],
+            "topic": "Gala theme, guest speakers, and fundraising targets for the annual fundraising gala"
+        }
+    }
+]
