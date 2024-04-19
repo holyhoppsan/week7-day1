@@ -14,9 +14,9 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, Trainer, TrainingA
 from peft import prepare_model_for_kbit_training, LoraConfig, get_peft_model, PeftModel
 
 
-# tokenizer = AutoTokenizer.from_pretrained("mistralai/Mixtral-8x7B-Instruct-v0.1", use_auth_token='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')
-# model = AutoModelForCausalLM.from_pretrained("mistralai/Mixtral-8x7B-Instruct-v0.1", load_in_4bit=True, torch_dtype=torch.float16, device_map="auto", use_auth_token='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')
-# tokenizer.pad_token = "!"
+tokenizer = AutoTokenizer.from_pretrained("mistralai/Mixtral-8x7B-Instruct-v0.1", use_auth_token='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')
+model = AutoModelForCausalLM.from_pretrained("mistralai/Mixtral-8x7B-Instruct-v0.1", load_in_4bit=True, torch_dtype=torch.float16, device_map="auto", use_auth_token='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')
+tokenizer.pad_token = "!"
 
 sys_msg = "Given the description of an email task, identify the intended recipients and generate a relevant topic for the email based on the given details. Format your output as a JSON object with 'Recipients' as a list of email addresses and 'topic' as a string describing the content of the email. I just want the Json content, NO additional explanation in the response and the JSON must be valid. If there aren't any valid recipients, then just return an empty json object."
 
