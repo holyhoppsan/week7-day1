@@ -7,6 +7,20 @@ from typing import List
 import os
 from dotenv import load_dotenv
 
+import torch
+import transformers
+from datasets import load_dataset
+from transformers import AutoTokenizer, AutoModelForCausalLM, Trainer, TrainingArguments
+from peft import prepare_model_for_kbit_training, LoraConfig, get_peft_model, PeftModel
+
+
+# tokenizer = AutoTokenizer.from_pretrained("mistralai/Mixtral-8x7B-Instruct-v0.1", use_auth_token='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')
+# model = AutoModelForCausalLM.from_pretrained("mistralai/Mixtral-8x7B-Instruct-v0.1", load_in_4bit=True, torch_dtype=torch.float16, device_map="auto", use_auth_token='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')
+# tokenizer.pad_token = "!"
+
+sys_msg = "Given the description of an email task, identify the intended recipients and generate a relevant topic for the email based on the given details. Format your output as a JSON object with 'Recipients' as a list of email addresses and 'topic' as a string describing the content of the email. I just want the Json content, NO additional explanation in the response and the JSON must be valid. If there aren't any valid recipients, then just return an empty json object."
+
+
 load_dotenv()
 
 app = FastAPI()
@@ -40,19 +54,26 @@ async def send_email(request: Request, inputText: str = Form(...)):
     # if not email_list:
     #     return templates.TemplateResponse("result.html", {"request": request, "message": "No recipients provided."})
 
-    topic = inputText
+    p = "<s> [INST]" + sys_msg +"\n"+ inputText + "[/INST] </s>"
+
+    with torch.no_grad():
+        input_ids = tokenizer([p], return_tensors="pt")
+        generated_ids = model.generate(**input_ids,max_new_tokens=100, do_sample=True)
+        tokenizer.batch_decode(generated_ids)[0]
+
+    topic = tokenizer.batch_decode(generated_ids)[0]
 
     message = MessageSchema(
-        subject="Update on " + topic,
+        subject="Here a generated snipppet!",
         recipients=email_list,
-        body=f"Dear colleagues, please find the latest updates on: {topic}",
+        body=f"Generated output {topic}",
         subtype="html"
     )
 
     fm = FastMail(conf)
     try:
         await fm.send_message(message)
-        return templates.TemplateResponse("result.html", {"request": request, "message": f"Email sent successfully to {', '.join(email_list)}."})
+        return templates.TemplateResponse("result.html", {"request": request, "message": f"Email with message {message} sent successfully to {', '.join(email_list)}."})
     except Exception as e:
         return templates.TemplateResponse("result.html", {"request": request, "message": f"Failed to send email: {str(e)}."})
 
