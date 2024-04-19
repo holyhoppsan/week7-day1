@@ -23,5 +23,5 @@ echo Environment set to:
 
 ~/miniconda3/bin/conda install cudatoolkit=11.0 -y
 #conda install cudatoolkit=11.0 -y
-pip install transformers datasets peft accelerate bitsandbytes fastapi uvicorn
+pip install transformers datasets peft accelerate bitsandbytes fastapi uvicorn fastapi-mail python-dotenv httpx jinja2 python-multipart
 
