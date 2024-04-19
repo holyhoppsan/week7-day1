@@ -20,6 +20,8 @@ source ~/miniconda3/bin/activate week7day1
 echo Environment set to:
 
 ~/miniconda3/bin/conda info --envs
+
+~/miniconda3/bin/conda install cudatoolkit=11.0 -y
 #conda install cudatoolkit=11.0 -y
 pip install transformers datasets peft accelerate bitsandbytes fastapi uvicorn
 

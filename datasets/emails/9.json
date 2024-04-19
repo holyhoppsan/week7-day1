@@ -1,0 +1,312 @@
+data = [
+    {
+        "Input": "Email emma.taylor@retrofashion.com, designers@retrofashion.com about the vintage clothing exhibit.",
+        "Output": {
+            "Recipients": [
+                "emma.taylor@retrofashion.com",
+                "designers@retrofashion.com"
+            ],
+            "topic": "Event details and special features for the upcoming vintage clothing exhibit"
+        }
+    },
+    {
+        "Input": "Send a briefing to noah.jackson@urbanfarming.com, community@urbanfarming.com about the rooftop garden project.",
+        "Output": {
+            "Recipients": [
+                "noah.jackson@urbanfarming.com",
+                "community@urbanfarming.com"
+            ],
+            "topic": "Project plan and volunteer recruitment strategy for the new rooftop garden initiative"
+        }
+    },
+    {
+        "Input": "Draft an email to oliver.jones@sculpturepark.com, artists@sculpturepark.com about the new installations.",
+        "Output": {
+            "Recipients": [
+                "oliver.jones@sculpturepark.com",
+                "artists@sculpturepark.com"
+            ],
+            "topic": "Introduction of new sculptures and installation timelines at the park"
+        }
+    },
+    {
+        "Input": "Notify ava.wilson@localbrewery.com, events@localbrewery.com about the craft beer tasting weekend.",
+        "Output": {
+            "Recipients": [
+                "ava.wilson@localbrewery.com",
+                "events@localbrewery.com"
+            ],
+            "topic": "Schedule of tastings and featured brews for the craft beer tasting event"
+        }
+    },
+    {
+        "Input": "Email isabella.martin@techstartups.com, investors@techstartups.com about the venture capital meet and greet.",
+        "Output": {
+            "Recipients": [
+                "isabella.martin@techstartups.com",
+                "investors@techstartups.com"
+            ],
+            "topic": "Details and objectives for the upcoming meet and greet with potential venture capitalists"
+        }
+    },
+    {
+        "Input": "Send an update to sophia.thompson@oceanawareness.com, partners@oceanawareness.com about the marine conservation campaign.",
+        "Output": {
+            "Recipients": [
+                "sophia.thompson@oceanawareness.com",
+                "partners@oceanawareness.com"
+            ],
+            "topic": "Campaign strategy and key messages for the upcoming marine conservation efforts"
+        }
+    },
+    {
+        "Input": "Draft an email to mia.taylor@worldliterature.com, authors@worldliterature.com about the international writers' workshop.",
+        "Output": {
+            "Recipients": [
+                "mia.taylor@worldliterature.com",
+                "authors@worldliterature.com"
+            ],
+            "topic": "Workshop schedule and guest author sessions for the international writers' workshop"
+        }
+    },
+    {
+        "Input": "Notify amelia.brown@classicalmusic.com, members@classicalmusic.com about the symphony orchestra auditions.",
+        "Output": {
+            "Recipients": [
+                "amelia.brown@classicalmusic.com",
+                "members@classicalmusic.com"
+            ],
+            "topic": "Audition pieces and schedule for the upcoming symphony orchestra auditions"
+        }
+    },
+    {
+        "Input": "Email harper.davis@modernart.com, curators@modernart.com about the abstract art series premiere.",
+        "Output": {
+            "Recipients": [
+                "harper.davis@modernart.com",
+                "curators@modernart.com"
+            ],
+            "topic": "Premiere date and featured artists for the new abstract art series"
+        }
+    },
+    {
+        "Input": "Send an update to elijah.rodriguez@environmentalsummit.com, speakers@environmentalsummit.com about the climate change panel.",
+        "Output": {
+            "Recipients": [
+                "elijah.rodriguez@environmentalsummit.com",
+                "speakers@environmentalsummit.com"
+            ],
+            "topic": "Panel discussion topics and speaker lineup for the climate change panel at the environmental summit"
+        }
+    },
+    {
+        "Input": "Draft an email to lucas.martinez@culinaryartsfestival.com, chefs@culinaryartsfestival.com about the gourmet food showcase.",
+        "Output": {
+            "Recipients": [
+                "lucas.martinez@culinaryartsfestival.com",
+                "chefs@culinaryartsfestival.com"
+            ],
+            "topic": "Showcase schedule and featured gourmet dishes for the culinary arts festival"
+        }
+    },
+    {
+        "Input": "Notify charlotte.lee@antiquecars.com, members@antiquecars.com about the classic car restoration seminar.",
+        "Output": {
+            "Recipients": [
+                "charlotte.lee@antiquecars.com",
+                "members@antiquecars.com"
+            ],
+            "topic": "Seminar details and expert speakers on classic car restoration techniques"
+        }
+    },
+    {
+        "Input": "Email henry.gonzalez@spaceconference.com, delegates@spaceconference.com about the astronaut panel discussion.",
+        "Output": {
+            "Recipients": [
+                "henry.gonzalez@spaceconference.com",
+                "delegates@spaceconference.com"
+            ],
+            "topic": "Discussion themes and astronaut participants for the panel at the space conference"
+        }
+    },
+    {
+        "Input": "Send an update to sebastian.clark@wildlifeconservation.com, partners@wildlifeconservation.com about the endangered species fund.",
+        "Output": {
+            "Recipients": [
+                "sebastian.clark@wildlifeconservation.com",
+                "partners@wildlifeconservation.com"
+            ],
+            "topic": "Fundraising strategies and goals for the endangered species conservation fund"
+        }
+    },
+    {
+        "Input": "Draft an email to camila.lopez@fashionweek.com, designers@fashionweek.com about the runway show schedule.",
+        "Output": {
+            "Recipients": [
+                "camila.lopez@fashionweek.com",
+                "designers@fashionweek.com"
+            ],
+            "topic": "Detailed schedule and designer lineup for the upcoming fashion week runway shows"
+        }
+    },
+    {
+        "Input": "Notify aaron.hernandez@healthexpo.com, exhibitors@healthexpo.com about the wellness product expo.",
+        "Output": {
+            "Recipients": [
+                "aaron.hernandez@healthexpo.com",
+                "exhibitors@healthexpo.com"
+            ],
+            "topic": "Expo layout and health and wellness products to be featured"
+        }
+    },
+    {
+        "Input": "Email victoria.moore@urbanarts.com, artists@urbanarts.com about the graffiti art competition.",
+        "Output": {
+            "Recipients": [
+                "victoria.moore@urbanarts.com",
+                "artists@urbanarts.com"
+            ],
+            "topic": "Competition rules and themes for the graffiti art event"
+        }
+    },
+    {
+        "Input": "Send an update to madison.anderson@pets.com, clients@pets.com about the pet adoption weekend.",
+        "Output": {
+            "Recipients": [
+                "madison.anderson@pets.com",
+                "clients@pets.com"
+            ],
+            "topic": "Schedule of events and special adoption rates for the pet adoption weekend"
+        }
+    },
+    {
+        "Input": "Draft an email to ethan.thomas@citygallery.com, patrons@citygallery.com about the photography exhibit opening.",
+        "Output": {
+            "Recipients": [
+                "ethan.thomas@citygallery.com",
+                "patrons@citygallery.com"
+            ],
+            "topic": "Opening night details and featured photographers for the new photography exhibit"
+        }
+    },
+    {
+        "Input": "Notify isabella.jackson@ecofestival.com, sponsors@ecofestival.com about the green technology fair.",
+        "Output": {
+            "Recipients": [
+                "isabella.jackson@ecofestival.com",
+                "sponsors@ecofestival.com"
+            ],
+            "topic": "Fair highlights and green technology innovations to be displayed"
+        }
+    },
+    {
+        "Input": "Email samuel.white@foodfair.com, vendors@foodfair.com about the international food fair.",
+        "Output": {
+            "Recipients": [
+                "samuel.white@foodfair.com",
+                "vendors@foodfair.com"
+            ],
+            "topic": "Details and logistics for participating vendors at the international food fair"
+        }
+    },
+    {
+        "Input": "Send a briefing to david.lewis@bookfestival.com, authors@bookfestival.com about the author signing sessions.",
+        "Output": {
+            "Recipients": [
+                "david.lewis@bookfestival.com",
+                "authors@bookfestival.com"
+            ],
+            "topic": "Schedule and guidelines for authors participating in the book signing sessions"
+        }
+    },
+    {
+        "Input": "Draft an email to sophia.walker@animalshelter.com, volunteers@animalshelter.com about the volunteer appreciation event.",
+        "Output": {
+            "Recipients": [
+                "sophia.walker@animalshelter.com",
+                "volunteers@animalshelter.com"
+            ],
+            "topic": "Event details and special recognitions planned for the volunteer appreciation day"
+        }
+    },
+    {
+        "Input": "Notify benjamin.harris@retrocinema.com, members@retrocinema.com about the classic film marathon.",
+        "Output": {
+            "Recipients": [
+                "benjamin.harris@retrocinema.com",
+                "members@retrocinema.com"
+            ],
+            "topic": "Film lineup and special guest appearances for the classic film marathon"
+        }
+    },
+    {
+        "Input": "Email daniel.martinez@yogastudio.com, instructors@yogastudio.com about the advanced yoga retreat.",
+        "Output": {
+            "Recipients": [
+                "daniel.martinez@yogastudio.com",
+                "instructors@yogastudio.com"
+            ],
+            "topic": "Retreat schedule and sessions focused on advanced yoga practices"
+        }
+    },
+    {
+        "Input": "Send an update to grace.robinson@marathon.com, runners@marathon.com about the city marathon route changes.",
+        "Output": {
+            "Recipients": [
+                "grace.robinson@marathon.com",
+                "runners@marathon.com"
+            ],
+            "topic": "New route details and logistical adjustments for the upcoming city marathon"
+        }
+    },
+    {
+        "Input": "Draft an email to mia.hernandez@travelagency.com, agents@travelagency.com about the exclusive travel packages.",
+        "Output": {
+            "Recipients": [
+                "mia.hernandez@travelagency.com",
+                "agents@travelagency.com"
+            ],
+            "topic": "Introduction and benefits of the new exclusive travel packages for top clients"
+        }
+    },
+    {
+        "Input": "Notify oliver.martin@nightlife.com, promoters@nightlife.com about the electronic music festival.",
+        "Output": {
+            "Recipients": [
+                "oliver.martin@nightlife.com",
+                "promoters@nightlife.com"
+            ],
+            "topic": "Festival schedule and headline performers for the electronic music festival"
+        }
+    },
+    {
+        "Input": "Email charlotte.thomas@childrensevents.com, coordinators@childrensevents.com about the kids' science day.",
+        "Output": {
+            "Recipients": [
+                "charlotte.thomas@childrensevents.com",
+                "coordinators@childrensevents.com"
+            ],
+            "topic": "Activities and educational booths planned for the kids' science day"
+        }
+    },
+    {
+        "Input": "Send a briefing to jacob.white@autoshows.com, dealers@autoshows.com about the luxury auto show.",
+        "Output": {
+            "Recipients": [
+                "jacob.white@autoshows.com",
+                "dealers@autoshows.com"
+            ],
+            "topic": "Show schedule and special features for the luxury auto show"
+        }
+    },
+    {
+        "Input": "Draft an email to emily.harris@brewfest.com, participants@brewfest.com about the homebrew competition.",
+        "Output": {
+            "Recipients": [
+                "emily.harris@brewfest.com",
+                "participants@brewfest.com"
+            ],
+            "topic": "Competition rules and judging criteria for the homebrew competition at the brew fest"
+        }
+    }
+]
