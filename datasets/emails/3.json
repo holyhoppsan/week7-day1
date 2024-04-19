@@ -1,4 +1,4 @@
-data = [
+[
     {
         "Input": "Email simon.peterson@bookworld.com, reviews@bookworld.com about the new author spotlight feature.",
         "Output": {

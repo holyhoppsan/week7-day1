@@ -1,4 +1,4 @@
-data = [
+[
     {
         "Input": "Compose an email for jane.doe@example.com, eco.team@example.org, and green.future@enviro.org about the importance of renewable energy.",
         "Output": {

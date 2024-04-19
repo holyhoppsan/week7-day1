@@ -1,4 +1,4 @@
-data = [
+[
     {
         "Input": "Email emma.taylor@retrofashion.com, designers@retrofashion.com about the vintage clothing exhibit.",
         "Output": {

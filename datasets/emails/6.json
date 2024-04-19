@@ -1,4 +1,4 @@
-data = [
+[
     {
         "Input": "Email aaron.clarke@microbrews.com, sales@microbrews.com about the craft beer festival.",
         "Output": {
